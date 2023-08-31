@@ -34,7 +34,7 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Página 1",
+      "displayName": "Página 1.2",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
@@ -90,7 +90,7 @@
     },
     {
       "config": "{}",
-      "displayName": "Página 2",
+      "displayName": "Página 2.2",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
@@ -138,7 +138,7 @@
     },
     {
       "config": "{}",
-      "displayName": "Página 3",
+      "displayName": "Página 3.2",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
