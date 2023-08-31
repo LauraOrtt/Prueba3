@@ -15,6 +15,20 @@
         "name": "SharedResources",
         "type": 2
       }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "OIP5623628072267226.jpg",
+            "path": "OIP5623628072267226.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
     }
   ],
   "sections": [
@@ -63,9 +77,9 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"f43e78fd11a2a9c4a8d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":485.3502928870293,\"y\":111.0547280334728,\"z\":4000,\"width\":445.58995815899584,\"height\":544.3052719665272}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"AnunciosPiso.Ad Neighbourhood\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Fianza\"},{\"queryRef\":\"Medidas.Precio\"},{\"queryRef\":\"Medidas.Señal\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AnunciosPiso\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ad Neighbourhood\"},\"Name\":\"AnunciosPiso.Ad Neighbourhood\",\"NativeReferenceName\":\"Ad Neighbourhood1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Fianza\"},\"Name\":\"Medidas.Fianza\",\"NativeReferenceName\":\"Fianza1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Precio\"},\"Name\":\"Medidas.Precio\",\"NativeReferenceName\":\"Precio1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Señal\"},\"Name\":\"Medidas.Señal\",\"NativeReferenceName\":\"Señal1\"}]},\"queryFieldParametersByRole\":{\"Rows\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ParámetroDimensión\"}},\"Property\":\"Dimensión\"}}}],\"Values\":[{\"index\":0,\"length\":3,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ParámetroCalculo\"}},\"Property\":\"Cálculos\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"AnunciosPiso.Ad Neighbourhood\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"AnunciosPiso.Ad Neighbourhood\":{\"displayName\":\"Ad Neighbourhood\"},\"Medidas.Fianza\":{\"displayName\":\"Fianza\"},\"Medidas.Precio\":{\"displayName\":\"Precio\"},\"Medidas.Señal\":{\"displayName\":\"Señal\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"214.1121569839388D\"}}}},\"selector\":{\"metadata\":\"AnunciosPiso.Ad Commercialname\"}}]}}}",
+          "config": "{\"name\":\"f43e78fd11a2a9c4a8d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":485.3502928870293,\"y\":111.0547280334728,\"z\":4000,\"width\":445.58995815899584,\"height\":542.9342259414226}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"AnunciosPiso.Ad Neighbourhood\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Fianza\"},{\"queryRef\":\"Medidas.Precio\"},{\"queryRef\":\"Medidas.Señal\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AnunciosPiso\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Ad Neighbourhood\"},\"Name\":\"AnunciosPiso.Ad Neighbourhood\",\"NativeReferenceName\":\"Ad Neighbourhood1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Fianza\"},\"Name\":\"Medidas.Fianza\",\"NativeReferenceName\":\"Fianza1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Precio\"},\"Name\":\"Medidas.Precio\",\"NativeReferenceName\":\"Precio1\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Señal\"},\"Name\":\"Medidas.Señal\",\"NativeReferenceName\":\"Señal1\"}]},\"queryFieldParametersByRole\":{\"Rows\":[{\"index\":0,\"length\":1,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ParámetroDimensión\"}},\"Property\":\"Dimensión\"}}}],\"Values\":[{\"index\":0,\"length\":3,\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ParámetroCalculo\"}},\"Property\":\"Cálculos\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"AnunciosPiso.Ad Neighbourhood\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"AnunciosPiso.Ad Neighbourhood\":{\"displayName\":\"Ad Neighbourhood\"},\"Medidas.Fianza\":{\"displayName\":\"Fianza\"},\"Medidas.Precio\":{\"displayName\":\"Precio\"},\"Medidas.Señal\":{\"displayName\":\"Señal\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"214.1121569839388D\"}}}},\"selector\":{\"metadata\":\"AnunciosPiso.Ad Commercialname\"}}]}}}",
           "filters": "[]",
-          "height": 544.31,
+          "height": 542.93,
           "width": 445.59,
           "x": 485.35,
           "y": 111.05,
@@ -83,6 +97,15 @@
       "name": "ReportSection8a3040b61dadc09e2471",
       "ordinal": 1,
       "visualContainers": [
+        {
+          "config": "{\"name\":\"31ae36b69e2e618541c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":65.81020920502093,\"y\":422.2821757322176,\"z\":2001,\"width\":139.84669456066945,\"height\":228.96468619246863,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"OIP5623628072267226.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 228.96,
+          "width": 139.85,
+          "x": 65.81,
+          "y": 422.28,
+          "z": 2001.00
+        },
         {
           "config": "{\"name\":\"8e42f23c08c370b7792e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.665568984851992,\"y\":46.66227593940797,\"z\":2000,\"width\":249.35153705121132,\"height\":83.11717901707044}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Aux - ListadoCalculos.Calculo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Aux - ListadoCalculos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Calculo\"},\"Name\":\"Aux - ListadoCalculos.Calculo\",\"NativeReferenceName\":\"Calculo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Aux - ListadoCalculos\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Calculo\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Superficie'\"}}]]}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}]}}}",
           "filters": "[]",
