@@ -1,0 +1,1252 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"AnunciosPiso\",\"Medidas\",\"Aux - ListadoCalculos\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.120.731.0 (23.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-ES",
+    "cultures": [
+      {
+        "name": "es-ES",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "anunciospiso.ad_commercialname": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "AnunciosPiso",
+                    "ConceptualProperty": "Ad Commercialname"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Ad Commercialname": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "anunciospiso.ad_neighbourhood": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "AnunciosPiso",
+                    "ConceptualProperty": "Ad Neighbourhood"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Ad Neighbourhood": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medidas.fianza": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Fianza"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Fianza": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medidas.precio": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Precio"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Precio": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medidas.señal": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Señal"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Señal": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "medidas.superficie": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Medidas",
+                    "ConceptualProperty": "Superficie"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Superficie": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "b2a4e4d5-77e9-47ae-9cdb-b25d4d5ccf14",
+        "fromColumn": "Fecha Publicación",
+        "fromTable": "AnunciosPiso",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_0da7800f-aab2-431c-9e5d-1784a42d9edd"
+      }
+    ],
+    "sourceQueryCulture": "es-ES",
+    "tables": [
+      {
+        "name": "AnunciosPiso",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Ad Id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "490415e3-9d6e-4494-9fa2-8192910af017",
+            "sourceColumn": "Ad Id",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Ad Neighbourhood",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "920a0a32-715d-4a2e-83a9-af55e9b54ebc",
+            "sourceColumn": "Ad Neighbourhood",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ad Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2ed48358-7543-4b59-9195-f34120d7b72b",
+            "sourceColumn": "Ad Latitude",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0aff7758-ba09-495d-8f79-a2506377b6a9",
+            "sourceColumn": "Ad Longitude",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "196ea40a-d08c-4947-962e-d0cce1b633cd",
+            "sourceColumn": "Ad Price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Area",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b67a32a9-aea7-4492-8876-39bc49e37572",
+            "sourceColumn": "Ad Area",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "# Rooms",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "02e71e7e-6b81-402f-84e6-6f2eb1e90fec",
+            "sourceColumn": "# Rooms",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Bathnumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cac59df4-cb5c-4088-9fdc-ef3b4ae3be17",
+            "sourceColumn": "Ad Bathnumber",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Commercialname",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d018dfe1-5941-4db8-a534-ff986c5659d7",
+            "sourceColumn": "Ad Commercialname",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fecha Publicación",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "33fd5180-051c-4fbd-a48c-faf02f4c8562",
+            "sourceColumn": "Fecha Publicación",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_0da7800f-aab2-431c-9e5d-1784a42d9edd"
+                },
+                "isDefault": true,
+                "relationship": "b2a4e4d5-77e9-47ae-9cdb-b25d4d5ccf14"
+              }
+            ]
+          },
+          {
+            "name": "Ad Numphotos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "aff8e7cf-253b-4d37-8e3b-eeab579a1101",
+            "sourceColumn": "Ad Numphotos",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Ad Num3Dtours",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5eb76de9-6e31-45e8-ab7f-66aa624dbeb7",
+            "sourceColumn": "Ad Num3Dtours",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Adstats Visits",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cf09a21e-3851-4dda-8689-4c1bc8e1f8a5",
+            "sourceColumn": "Adstats Visits",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Adstats Contactsbyemail",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5bece985-0e21-487c-b7c6-d2b731ed25ae",
+            "sourceColumn": "Adstats Contactsbyemail",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Régimen",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c129ef4a-2f48-45ba-962d-8c8be7113d0d",
+            "sourceColumn": "Régimen",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RegimenID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4ab36f75-ebe3-4ab0-9911-097a20bceff2",
+            "sourceColumn": "RegimenID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Señal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d0953bb8-cf3a-41a4-9f1b-a472a3e4d244",
+            "sourceColumn": "Señal",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Fianza",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a00f3b3a-4c31-41d8-81f0-29d8da063297",
+            "sourceColumn": "Fianza",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Popularidad",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "IF(AnunciosPiso[Adstats Visits]>=3000, ",
+              "                \"Popular\",",
+              "                \"Impopular\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "515bee58-d525-4d20-a430-a8310df3e033",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "b1e1ee8c-5de7-45df-8494-8d3fce6a7013",
+        "partitions": [
+          {
+            "name": "AnunciosPiso-586c8f43-e330-4eda-8afe-66a779de8640",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\lortiz\\OneDrive - Lãberit\\Curso PBI Intermedio\\Prácticas\\DataSetAnunciosPiso.xlsx\"), null, true),",
+                "    Sheet1_Sheet = Origen{[Item=\"Sheet1\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"Ad Id\", Int64.Type}, {\"Ad Neighbourhood\", type text}, {\"Ad Latitude\", type number}, {\"Ad Longitude\", type number}, {\"Ad Price\", Int64.Type}, {\"Ad Area\", Int64.Type}, {\"# Rooms\", Int64.Type}, {\"Ad Bathnumber\", Int64.Type}, {\"Ad Commercialname\", type text}, {\"Fecha Publicación\", type date}, {\"Ad Numphotos\", Int64.Type}, {\"Ad Num3Dtours\", Int64.Type}, {\"Adstats Visits\", Int64.Type}, {\"Adstats Contactsbyemail\", Int64.Type}, {\"Régimen\", type text}, {\"RegimenID\", Int64.Type}, {\"Señal\", Int64.Type}, {\"Fianza\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_3649ab2d-321b-407a-aacf-0cc135079dbf",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "b690cfa5-f403-4553-b6ba-2de5a6c36958",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "3df70665-f9a5-45e0-9d8e-0099b65b2dbd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "e16f00ad-bb40-4396-8bd0-1998acf80289",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "09a857bd-018d-4f72-9a6c-481fe9dfd93c",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "5d80bf23-6a8f-41f2-872e-4584178297c0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "123d4394-d9f9-4032-a402-1cc8fc95e3c6",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "60e030d6-08ed-46b3-962b-2d385fe05a3a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "e14c40d1-aa3a-49dc-80e4-e12ea95366f0",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "ebb7d729-e0d0-4d9e-93f0-8e10b7848bfe",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "5ec0484a-03f9-4422-8f30-53f4676d2765",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "3113bdfe-7173-4ed4-9c4a-d0bfeca30497",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "9564fb92-ad9c-40f1-8b2f-fa5eaff4e876"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "a4c6b13b-27fb-4104-a5f1-669c4ef106ed",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_3649ab2d-321b-407a-aacf-0cc135079dbf-24bc7bc1-0e7f-489d-9f05-b82954f487ce",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_0da7800f-aab2-431c-9e5d-1784a42d9edd",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "f33efd8f-126f-4f32-9b17-7ca70cffacdf",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "95afd64d-d573-421c-986c-73adf806576e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "9d1f1e5f-5dfb-437a-8678-fd4ac8f7f484",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "891d5fec-3ad2-49b2-9aca-022ff05f1b5a",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "06b8a3a3-535d-4627-9c2d-a25d15b111cd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "aeced1c8-9ab7-48d7-bb9f-125cd7bda254",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "902400d9-6e04-4a65-bff9-8d970f770d23",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "86722947-5f37-45b0-913c-3150bda48578",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "d35da0e1-4da8-4ad7-963a-debb7cca87cd",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "5f76448b-0621-43ce-b53d-3e801efb5d91",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "68e39a8f-68e8-4a26-9500-7d91673f6df6",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "8689c431-052e-4b78-9be6-8cd6299172ae"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "08800207-2fd7-4f47-901b-a48c917f7287",
+        "partitions": [
+          {
+            "name": "LocalDateTable_0da7800f-aab2-431c-9e5d-1784a42d9edd-862507ca-d808-4c94-b597-dfe732ead790",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('AnunciosPiso'[Fecha Publicación])), 1, 1), Date(Year(MAX('AnunciosPiso'[Fecha Publicación])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "dc8f9fe0-38a1-405f-a734-836927e6822f",
+        "measures": [
+          {
+            "name": "Señal",
+            "expression": "sum(AnunciosPiso[Señal])",
+            "formatString": "#,0",
+            "lineageTag": "b40fa01e-33ce-4ddb-bf8a-5f345e504a4a"
+          },
+          {
+            "name": "Fianza",
+            "expression": "sum(AnunciosPiso[Fianza])",
+            "formatString": "#,0",
+            "lineageTag": "643ccf63-899a-4c50-bce9-17146d1ad90a"
+          },
+          {
+            "name": "Precio",
+            "expression": "sum(AnunciosPiso[Ad Price])",
+            "formatString": "#,0",
+            "lineageTag": "2c821ea8-f02b-4d32-a011-e1146f745c09"
+          },
+          {
+            "name": "Superficie",
+            "expression": "sum(AnunciosPiso[Ad Area])",
+            "formatString": "#,0",
+            "lineageTag": "0c80267d-183a-489e-8cef-6093a3734e40"
+          },
+          {
+            "name": "CálculosDinámicos",
+            "expression": [
+              "SWITCH(TRUE(),",
+              "                            SELECTEDVALUE('Aux - ListadoCalculos'[Calculo])=\"Fianza\", [Fianza],",
+              "                            SELECTEDVALUE('Aux - ListadoCalculos'[Calculo])=\"Precio\", [Precio],",
+              "                            SELECTEDVALUE('Aux - ListadoCalculos'[Calculo])=\"Señal\", [Señal],",
+              "                            SELECTEDVALUE('Aux - ListadoCalculos'[Calculo])=\"Superficie\", [Superficie],",
+              "                            SELECTEDVALUE('Aux - ListadoCalculos'[Calculo])=\"No.Anuncios\", [No. Anuncios]",
+              "                           ",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "d39b3ddc-8024-4771-ab67-a87705dd6503"
+          },
+          {
+            "name": "No. Anuncios",
+            "expression": "COUNTROWS(AnunciosPiso)",
+            "formatString": "0",
+            "lineageTag": "30650829-7197-4ecd-9f42-fa2a796fb60b"
+          },
+          {
+            "name": "CalculoDinamicoMostrar",
+            "expression": "if([CálculosDinámicos]>0,1,0)",
+            "formatString": "0",
+            "lineageTag": "4b36161b-603c-42fd-b701-314cf91f1b41"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas-ef40c7f1-ba7d-41e0-ae3e-f64b4aba8106",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Origen,{{\"Columna1\", type text}}),",
+                "    #\"Columnas quitadas\" = Table.RemoveColumns(#\"Tipo cambiado\",{\"Columna1\"})",
+                "in",
+                "    #\"Columnas quitadas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Aux - ListadoCalculos",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Calculo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c516b8c5-fc05-4436-bc5c-7c80d6a41f88",
+            "sourceColumn": "Calculo",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "1a2faa4a-78d5-4d0c-bf64-7de6b51b2e1f",
+        "partitions": [
+          {
+            "name": "Aux - ListadoCalculos-dd9b0f6f-52ab-4689-8953-44c58883b49f",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WCihKTc7MV4rViVYKLi1ILUrLTM5MBXPdMhPzqhIhMqmHNybmgJl++XoKjnmleUBNxUqxsQA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Calculo = _t]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Origen,{{\"Calculo\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ParámetroCalculo",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "7907f8af553542b8ab65471cf54040c6"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Cálculos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "99ccd926-092d-4806-ab33-4d165afd9bf2",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "ParámetroCalculo Campos"
+                }
+              ]
+            },
+            "sortByColumn": "ParámetroCalculo Orden",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "ParámetroCalculo Campos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "extendedProperties": [
+              {
+                "name": "ParameterMetadata",
+                "type": "json",
+                "value": {
+                  "kind": 2,
+                  "version": 3
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "daa91bea-a5bd-4617-a05c-e1ed518a11e6",
+            "sortByColumn": "ParámetroCalculo Orden",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "ParámetroCalculo Orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "0870f780-d221-46e0-b912-459ef289644d",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "2ff38b3b-2c8d-47aa-9359-0015023d9439",
+        "partitions": [
+          {
+            "name": "ParámetroCalculo-4e3d9740-1472-4ee8-8d72-1f3915595709",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"Fianza\", NAMEOF('Medidas'[Fianza]), 0),",
+                "    (\"Precio\", NAMEOF('Medidas'[Precio]), 1),",
+                "    (\"Señal\", NAMEOF('Medidas'[Señal]), 2),",
+                "    (\"Superficie\", NAMEOF('Medidas'[Superficie]), 3)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ParámetroDimensión",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "f992bab33b40476fb68c0708b246392d"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Dimensión",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "f12b4ae0-73be-4224-937a-7347e9881a58",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "ParámetroDimensión Campos"
+                }
+              ]
+            },
+            "sortByColumn": "ParámetroDimensión Orden",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "ParámetroDimensión Campos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "extendedProperties": [
+              {
+                "name": "ParameterMetadata",
+                "type": "json",
+                "value": {
+                  "kind": 2,
+                  "version": 3
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "2fa1f50c-1562-4e82-9956-3b5b9fbd284c",
+            "sortByColumn": "ParámetroDimensión Orden",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "ParámetroDimensión Orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "8a371a83-1718-4bd6-9040-d019141881e6",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "414cf20d-fe23-4d5a-a9eb-6efa59f5e015",
+        "partitions": [
+          {
+            "name": "ParámetroDimensión-418f2175-d1e7-4268-bb60-cc01b1031925",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"Ad Commercialname\", NAMEOF('AnunciosPiso'[Ad Commercialname]), 0),",
+                "    (\"Ad Neighbourhood\", NAMEOF('AnunciosPiso'[Ad Neighbourhood]), 1),",
+                "    (\"Ad Id\", NAMEOF('AnunciosPiso'[Ad Id]), 2),",
+                "    (\"Régimen\", NAMEOF('AnunciosPiso'[Régimen]), 3),",
+                "    (\"Popularidad\", NAMEOF('AnunciosPiso'[Popularidad]), 4)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
